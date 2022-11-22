@@ -1,0 +1,185 @@
+object Form1: TForm1
+  Left = 855
+  Height = 800
+  Top = 175
+  Width = 1200
+  Caption = 'КГ Лаба 3'
+  ClientHeight = 800
+  ClientWidth = 1200
+  Color = clWhite
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Bevel1: TBevel
+    Left = 218
+    Height = 787
+    Top = 6
+    Width = 976
+  end
+  object PaintBox1: TPaintBox
+    Left = 218
+    Height = 787
+    Top = 6
+    Width = 975
+    Color = clWhite
+    ParentColor = False
+    OnMouseDown = PaintBox1MouseDown
+  end
+  object FinishDrawing: TButton
+    Left = 6
+    Height = 24
+    Top = 6
+    Width = 102
+    Caption = 'Замкнуть'
+    OnClick = FinishDrawingClick
+    TabOrder = 0
+  end
+  object ClearCanvas: TButton
+    Left = 6
+    Height = 25
+    Top = 38
+    Width = 108
+    AutoSize = True
+    Caption = 'Очистить поле'
+    OnClick = ClearCanvasClick
+    TabOrder = 1
+  end
+  object MoveButton: TButton
+    Left = 6
+    Height = 25
+    Top = 70
+    Width = 75
+    Caption = 'Сдвиг'
+    OnClick = MoveButtonClick
+    TabOrder = 2
+  end
+  object RotateButton: TButton
+    Left = 6
+    Height = 25
+    Top = 102
+    Width = 75
+    Caption = 'Повернуть'
+    OnClick = RotateButtonClick
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 83
+    Height = 15
+    Top = 77
+    Width = 39
+    Caption = 'по x на'
+    ParentColor = False
+  end
+  object mX: TEdit
+    Left = 128
+    Height = 23
+    Top = 73
+    Width = 19
+    OnKeyPress = mXKeyPress
+    TabOrder = 4
+    Text = '5'
+  end
+  object Label2: TLabel
+    Left = 147
+    Height = 15
+    Top = 77
+    Width = 39
+    Caption = 'по y на'
+    ParentColor = False
+  end
+  object mY: TEdit
+    Left = 192
+    Height = 23
+    Top = 73
+    Width = 19
+    OnKeyPress = mYKeyPress
+    TabOrder = 5
+    Text = '5'
+  end
+  object mirrorOxButton: TButton
+    Left = 6
+    Height = 25
+    Top = 134
+    Width = 111
+    AutoSize = True
+    Caption = 'Отразить по Ox'
+    OnClick = mirrorOxButtonClick
+    TabOrder = 6
+  end
+  object mirrorOyButton: TButton
+    Left = 6
+    Height = 25
+    Top = 166
+    Width = 111
+    AutoSize = True
+    Caption = 'Отразить по Oy'
+    OnClick = mirrorOyButtonClick
+    TabOrder = 7
+  end
+  object stretchOxButton: TButton
+    Left = 6
+    Height = 25
+    Top = 198
+    Width = 115
+    AutoSize = True
+    Caption = 'Растянуть по Ox'
+    OnClick = stretchOxButtonClick
+    TabOrder = 8
+  end
+  object stretchOyButton: TButton
+    Left = 6
+    Height = 25
+    Top = 230
+    Width = 115
+    AutoSize = True
+    Caption = 'Растянуть по Oy'
+    OnClick = stretchOyButtonClick
+    TabOrder = 9
+  end
+  object FlipAndIncreaseButton: TButton
+    Left = 6
+    Height = 25
+    Top = 262
+    Width = 167
+    AutoSize = True
+    Caption = 'Перевернуть и увеличить'
+    OnClick = FlipAndIncreaseButtonClick
+    TabOrder = 10
+  end
+  object FlipAndDecreaseButton: TButton
+    Left = 6
+    Height = 25
+    Top = 294
+    Width = 173
+    AutoSize = True
+    Caption = 'Перевернуть и уменьшить'
+    OnClick = FlipAndDecreaseButtonClick
+    TabOrder = 11
+  end
+  object CheckBox1: TCheckBox
+    Left = 122
+    Height = 19
+    Top = 203
+    Width = 73
+    Caption = 'наоборот'
+    TabOrder = 12
+  end
+  object CheckBox2: TCheckBox
+    Left = 122
+    Height = 19
+    Top = 230
+    Width = 73
+    Caption = 'наоборот'
+    TabOrder = 13
+  end
+  object Button1: TButton
+    Left = 6
+    Height = 25
+    Top = 326
+    Width = 138
+    AutoSize = True
+    Caption = 'придумать название'
+    Color = clRed
+    OnClick = Button1Click
+    TabOrder = 14
+  end
+end

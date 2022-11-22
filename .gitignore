@@ -1,0 +1,7 @@
+*.exe
+*.ico
+backup
+lib
+tempCodeRunnerFile*
+*.o
+.vscode
